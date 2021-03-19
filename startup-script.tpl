@@ -16,7 +16,7 @@ exec 2>&1
 
 mkdir -p /config/cloud
 
-curl -o /config/cloud/do_w_admin.json -s --fail --retry 60 -m 10 -L https://gist.githubusercontent.com/El-Coder/db1c67da8f821dcd02925073eaa8aff3/raw/e6a1a21afcd127756c030ed1e3639b24c103bbc9/do.json
+curl -o /config/cloud/do_w_admin.json -s --fail --retry 60 -m 10 -L https://raw.githubusercontent.com/El-Coder/terraform-azure-bigip-module/master/config/onboard_do.json
 mkdir -p /var/lib/cloud/icontrollx_installs
 
 cat << 'EOF' > /config/cloud/runtime-init-conf.yaml
