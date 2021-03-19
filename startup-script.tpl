@@ -16,7 +16,7 @@ exec 2>&1
 
 mkdir -p /config/cloud
 
-curl -o /config/cloud/do_w_admin.json -s --fail --retry 60 -m 10 -L https://gist.githubusercontent.com/El-Coder/db1c67da8f821dcd02925073eaa8aff3/raw/79ed043b63b73f1505705227fc0ce47251bfe7fa/do.json
+curl -o /config/cloud/do_w_admin.json -s --fail --retry 60 -m 10 -L https://gist.githubusercontent.com/El-Coder/db1c67da8f821dcd02925073eaa8aff3/raw/64040bc2034fee932a82ed1e93355e09b0228ea4/do.json
 mkdir -p /var/lib/cloud/icontrollx_installs
 
 cat << 'EOF' > /config/cloud/runtime-init-conf.yaml
